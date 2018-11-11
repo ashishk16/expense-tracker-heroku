@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Starter kit for React and Redux Pluralsight course by Cory House",
   "scripts": {
-    "postinstall": "webpack",
     "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel test:watch open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
@@ -11,7 +10,7 @@
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter spec tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
-    "build": "webpack"
+    "heroku-postbuild": "npm start"
   },
   "author": "Ashish Kumar",
   "dependencies": {
