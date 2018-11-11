@@ -10,7 +10,6 @@
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter spec tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
-    "heroku-postbuild": "npm start"
   },
   "author": "Ashish Kumar",
   "dependencies": {

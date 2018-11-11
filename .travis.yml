@@ -4,8 +4,7 @@ node_js:
 script:
 - "npm run lint"
 - "npm run test"
-- nohup npm run start &
-- sleep 3
+
 deploy:
   provider: heroku
   api_key:
