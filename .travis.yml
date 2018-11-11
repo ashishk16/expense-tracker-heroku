@@ -4,3 +4,11 @@ node_js:
 script:
 - "npm run lint"
 - "npm run test"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: b23a910f-360a-420b-bf8a-bfcb1be90fed
+  app: expense-tracker-heroku
+  on:
+    repo: ashishk16/expense-tracker-heroku
